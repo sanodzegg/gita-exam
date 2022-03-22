@@ -34,6 +34,10 @@ nav {
     position: relative;
 }
 
+nav .active {
+    border-bottom: 3px #fff solid;
+}
+
 nav .navbar-dash {
     border: 1px solid #979797;
     width: 470px;
@@ -69,10 +73,6 @@ a {
     font-size: 16px;
     letter-spacing: 2.7px;
     cursor: pointer;
-}
-
-.active {
-    border-bottom: 3px #fff solid;
 }
 
 .landing-main {
@@ -132,12 +132,192 @@ a {
     cursor: pointer;
 }
 
+.page-header {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #fff;
+    font-weight: normal;
+    letter-spacing: 4.7px;
+    font-size: 28px;
+    width: 1135px;
+    margin: 75px auto 0 auto;
+}
+
+.page-header span {
+    color: #51525B;
+    padding-right: 28px;
+    font-weight: bold;
+}
+
+.display-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1135px;
+    margin: 65px auto 0 auto;
+    max-width: 100%;
+}
+
+.display-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 445px;
+    max-width: 100%;
+}
 
 
+.di-nav ul {
+    padding: unset;
+    margin: unset;
+    background: unset;
+    backdrop-filter: unset;
+}
 
+.di-nav li {
+    font-size: 16px;
+    color: #D0D6F9;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    font-weight: lighter;
+    margin-right: 35px;
+    cursor: pointer;
+}
 
+.di-nav .active {
+    color: #FFF;
+}
 
+.display-header {
+    color: #FFF;
+    font-size: 100px;
+    font-family: 'Bellefair', serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
 
+#crewRank {
+    font-size: 32px;
+    font-family: 'Ballefair', serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #8E9096;
+    margin: 0;
+}
+
+#crewName {
+    font-size: 56px;
+    width: max-content;
+}
+
+.display-desc {
+    margin: 0;
+    color: #D0D6F9;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: lighter;
+}
+
+.display-hr {
+    margin: 50px 0 25px 0;
+    border: 1px #97979723 solid;
+    width: 100%;
+}
+
+.display-avg-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.display-avg-wrapper div {
+    margin-right: 80px;
+}
+
+.display-avg-wrapper div > * {
+    display: block;
+}
+
+.scroll-dots {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    width: fit-content;
+}
+
+.scroll-dots div {
+    width: 15px;
+    height: 15px;
+    background-color: #FFF;
+    opacity: .3;
+    border-radius: 50%;
+    margin-right: 24px;
+    cursor: pointer;
+}
+
+.scroll-dots .active {
+    opacity: 1;
+}
+
+.avg-head {
+    color: #D0D6F9;
+    font-size: 14px;
+    letter-spacing: 2.35px;
+    text-transform: uppercase;
+}
+
+.avg-val {
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-family: 'Bellefair', serif;
+}
+
+.tech-line {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    color: #D0D6F9;
+    letter-spacing: 2.7px;
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.tech-scrollbar div {
+    border-radius: 50%;
+    border: 1px solid #4D4F57;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+.tech-scrollbar span {
+    font-size: 32px;
+    font-family: 'Bellefair', serif;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 53%;
+    left: 53%;
+    transform: translate(-53%, -53%);
+    color: #FFF;
+}
+
+.tech-scrollbar .active {
+    background-color: #FFF;
+}
+
+.tech-scrollbar .active > span {
+    color: #0B0D17;
+}
+
+#techName {
+    font-size: 56px;
+    width: max-content;
+}
 
 
 @keyframes heartbeat {
