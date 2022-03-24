@@ -7,7 +7,7 @@
     <title>Space Tourism | Home</title>
     <link rel="stylesheet" href="./css/sanitize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/index.js"></script>
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body class="w-1">
     <nav>
@@ -20,10 +20,10 @@
         <hr class="navbar-dash">
         <div class="navbar">
             <ul>
-                <li><a href="./index.html" class="active">00 home</a></li>
-                <li><a href="./destination.html">01 destination</a></li>
-                <li><a href="./crew.html">02 crew</a></li>
-                <li><a href="./technology.html">03 technology</a></li>
+                <li><a href="./index.html" class="active"><span class="numeric">00</span> home</a></li>
+                <li><a href="./destination.html"><span class="numeric">01</span> destination</a></li>
+                <li><a href="./crew.html"><span class="numeric">02</span> crew</a></li>
+                <li><a href="./technology.html"><span class="numeric">03</span> technology</a></li>
             </ul>
         </div>
     </nav>
@@ -33,7 +33,8 @@
             <h1>space</h1>
             <p>Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
         </div>
-        <button id="explore">explore</button>
+        <a id="forwardsBtn" href="./destination.html"><button id="explore">explore</button></a>
     </section>
+    <script src="./js/index.js"></script>
 </body>
 </html>

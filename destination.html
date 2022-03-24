@@ -7,6 +7,7 @@
     <title>Space Tourism | Destination</title>
     <link rel="stylesheet" href="./css/sanitize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body class="w-2">
     <nav>
@@ -19,45 +20,46 @@
         <hr class="navbar-dash">
         <div class="navbar">
             <ul>
-                <li><a href="./index.html">00 home</a></li>
-                <li><a href="./destination.html" class="active">01 destination</a></li>
-                <li><a href="./crew.html">02 crew</a></li>
-                <li><a href="./technology.html">03 technology</a></li>
+                <li><a href="./index.html"><span class="numeric">00</span> home</a></li>
+                <li><a href="./destination.html" class="active"><span class="numeric">01</span> destination</a></li>
+                <li><a href="./crew.html"><span class="numeric">02</span> crew</a></li>
+                <li><a href="./technology.html"><span class="numeric">03</span> technology</a></li>
             </ul>
         </div>
     </nav>
     <h1 class="page-header"><span>01</span>pick your destination</h1>
     <section class="display-section">
         <div class="display-img">
-            <img id="planetImg" src="./media/jpg/planets/moon.jpg" alt="picture of moon">
+            <img id="planetImg" src="./assets/destination/image-moon.png">
         </div>
         <div class="display-info">
             <div class="di-nav">
-                <ul>
+                <ul id="diNav">
                     <li class="active">MOON</li>
                     <li>MARS</li>
                     <li>EUROPA</li>
                     <li>TITAN</li>
                 </ul>
             </div>
-            <h1 class="display-header">
+            <h1 class="display-header" id="destHeader">
                 moon
             </h1>
-            <p class="display-desc">
+            <p class="display-desc" id="destDesc">
                 See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
             </p>
             <hr class="display-hr">
             <div class="display-avg-wrapper">
                 <div>
                     <span class="avg-head">avg. distance</span>
-                    <span class="avg-val">384,400 km</span>
+                    <span id="avgValue" class="avg-val">384,400 km</span>
                 </div>
                 <div>
                     <span class="avg-head">est. travel time</span>
-                    <span class="avg-val">3 days</span>
+                    <span id="avgTime" class="avg-val">3 days</span>
                 </div>
             </div>
         </div>
     </section>
+    <script src="./js/index.js"></script>
 </body>
 </html>

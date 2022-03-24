@@ -1,0 +1,141 @@
+@media screen and (max-width: 1240px) {
+    nav .navbar-dash {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    body {
+        height: auto;
+        overflow-x: hidden;
+    }
+    .w-1 {
+        background-image: url('../media/jpg/tablet/Bitmap.jpg');
+    }
+    .w-2 {
+        background-image: url('../media/jpg/tablet/Bitmap2.jpg');
+    }
+    .w-3 {
+        background-image: url('../media/jpg/tablet/Bitmap3.jpg');
+    }
+    
+    .w-4 {
+        background-image: url('../media/jpg/tablet/Bitmap4.jpg');
+    }
+    nav {
+        padding-left: 40px;
+    }
+    ul {
+        padding: unset;
+    }
+    .landing-main {
+        flex-direction: column;
+        width: max-content;
+        justify-content: center;
+        align-items: center;
+        margin: 12% auto 0 auto;
+    }
+    .landing-main button {
+        margin: 156px 0 90px 0;
+    }
+    .text-wrapper h5 {
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 3.38px;
+    }
+    .text-wrapper p {
+        text-align: center;
+    }
+    .numeric {
+        display: none;
+    }
+    .page-header {
+        margin: 40px auto 0 38.5px;
+        font-size: 20px;
+    }
+    .c-h {
+        margin: 0 auto 0 38.5px;
+    }
+    .display-section {
+        margin-top: 60px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .crew-wrapper {
+        margin-top: 40px;
+    }
+    .display-wrapper {
+        flex-direction: column;
+    }
+    .display-info {
+        margin-top: 53px;
+    }
+    .di-nav ul, .display-header, .display-desc {
+        text-align: center;
+    }
+    .display-avg-wrapper {
+        justify-content: center;
+        margin-bottom: 62px;
+    }
+    .display-avg-wrapper div {
+        text-align: center;
+        margin-right: unset;
+        margin: 0 10px;
+    }
+    #crewRank, #crewName, #crewDesc {
+        text-align: center;
+        width: auto;
+    }
+    #crewRank {
+        font-size: 20px;
+    }
+    #crewName {
+        font-size: 40px;
+    }
+    .scroll-dots {
+        margin: 40px auto;
+    }
+    .crew {
+        margin-top: unset;
+    }
+    #techInfo {
+        order: 2;
+    }
+    .tech {
+        flex-direction: column-reverse;
+    }
+    .tech-scrollbar {
+        order: 1;
+        display: flex;
+    }
+    .tech-scrollbar div {
+        margin: 56px 3px 44px 3px;
+    }
+    .tech-img {
+        width: 100%;
+        height: 310px;
+        max-height: 100%;
+        overflow: hidden
+    }
+
+    #techImg {
+        width: 100%;
+        object-fit: cover;
+        height: inherit;
+    }
+    #techInfo {
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+    .tech-line {
+        text-align: center;
+    }
+    #techName {
+        font-size: 40px;
+        text-align: center;
+        width: auto;
+    }
+    .di-nav li:nth-child(4) {
+        margin-right: unset;
+    }
+}
