@@ -25,6 +25,55 @@ body {
     background-image: url('../media/jpg/web/Bitmap4.jpg');
 }
 
+.burger-nav, #burgerOpen {
+    display: none;
+    z-index: 10;
+}
+
+.burger-menu {
+    min-height: 100vh;
+    position: absolute;
+    width: 0;
+    right: 0;
+    top: 0;
+    backdrop-filter: blur(50px);
+    background-color: #ffffff0a;
+    transition: width .5s ease-in-out;
+}
+
+#burgerWrapper {
+    height: 0;
+    overflow: hidden;
+    margin-top: 34px;
+    transition: height .5s ease-in-out;
+}
+
+.burger-menu #burgerClose {
+    float: right;
+    margin: 0 26.45px 65px 0;
+}
+
+.burger-menu ul {
+    backdrop-filter: unset;
+    background-color: unset;
+}
+
+.burger-menu a {
+    padding: 16px 0;
+    margin-left: 32px;
+    margin-right: unset;
+    width: 87.5%;
+}
+
+.burger-menu span {
+    font-weight: bold;
+}
+
+.burger-menu a:hover {
+    border: unset;
+    border-right: 3px #FFF solid;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -299,6 +348,7 @@ nav .active:hover {
 
 .display-avg-wrapper div > * {
     display: block;
+    white-space: nowrap;
 }
 
 .scroll-dots {

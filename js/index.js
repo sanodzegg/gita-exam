@@ -52,6 +52,34 @@ if(onPage == "destination.html") {
   getData("technology");
 }
 
+// burger menu
+
+let burgerOpen = document.getElementById("burgerOpen");
+let burgerMenu = document.getElementById("burgerMenu");
+let burgerWrapper = document.getElementById("burgerWrapper");
+let burgerClose = document.getElementById("burgerClose");
+
+if(window.matchMedia("(max-width: 580px)")) {
+  burgerOpen.addEventListener('click', () => {
+    burgerMenu.style.width = "67.733vw";
+    burgerOpen.style.display = "none";
+    burgerClose.style.display = "block";
+    setTimeout(() => {
+      document.body.style.overflow = "hidden";
+      burgerWrapper.style.height = "100vh";
+    }, 500);
+  });
+  burgerClose.addEventListener('click', () => {
+    burgerOpen.style.display = "block";
+    burgerWrapper.style.height = "0";
+    setTimeout(() => {
+      burgerClose.style.display = "none";
+      burgerMenu.style.width = "0vw";
+      document.body.style.overflowY = "scroll";
+    }, 500);
+  });
+}
+
 const scroller = (arr, type, el) => {
   const navArr = [...arr]
   const obj = Object.values(el);

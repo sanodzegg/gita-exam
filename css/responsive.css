@@ -8,6 +8,7 @@
     body {
         height: auto;
         overflow-x: hidden;
+        overflow-y: scroll;
     }
     .w-1 {
         background-image: url('../media/jpg/tablet/Bitmap.jpg');
@@ -137,5 +138,114 @@
     }
     .di-nav li:nth-child(4) {
         margin-right: unset;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    #burgerOpen {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .burger-nav {
+        display: block;
+        cursor: pointer;
+    }
+    nav {
+        padding: 24px 24px 0 24px;
+    }
+    .text-wrapper h1 {
+        font-size: 25.862vw;
+        text-align: center;
+    }
+    .landing-main button {
+        margin: 21.333vw 0 12.800vw 0;
+        width: 40vw;
+        height: 40vw;
+        font-size: 5.333vw;
+    }
+    .landing-main a {
+        padding: unset;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #planetImg {
+        width: 82.407vw;
+    }
+    .display-header {
+        font-size: 18.519vw;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .page-header {
+        width: 220px;
+        margin: 24px auto 0 auto;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 4.103vw;
+        letter-spacing: 2.7px;
+    }    
+    .page-header span {
+        padding-right: 18px;
+    } 
+    .display-avg-wrapper {
+        flex-direction: column;
+    }
+    .display-avg-wrapper div:nth-child(1) {
+        margin-bottom: 32px;
+    }
+    .crew-img {
+        width: 87.200vw;
+        border-bottom: solid 1px #383B4B;
+        text-align: center;
+    }
+    #crewImg {
+        order: 1;
+        width: 47.200vw;
+        height: 59.200vw;
+    }
+    .crew, #crewAbout, #crewName, #crewRank {
+        order: 2;
+    }
+    #cNav {
+        order: 1;
+    }
+    #cNav div:nth-child(4) {
+        margin-right: unset;
+    } 
+    #crewAbout {
+        margin-bottom: 105px;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    #diNav {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+    #diNav li:nth-child(2) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 245px) {
+    .page-header {
+        width: 220px;
+        margin: 24px auto 0 auto;
+        text-align: center;
+        white-space: nowrap;
+        font-size: 9.4px;
+        letter-spacing: 2.7px;
+    }
+    .crew-img {
+        width: 212px;
+    }
+    #crewImg {
+        width: 107px;
+        height: 135px;
     }
 }
