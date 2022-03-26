@@ -1,4 +1,4 @@
-const navbar = document.querySelector(".navbar ul").children;
+const navbar = document.querySelector(".navbar li").children;
 
 const variables = {
   destination: {
@@ -42,11 +42,13 @@ const getData = (section) => {
   req.send();
 }
 
-if(window.location.pathname == "/destination.html") {
+let onPage = window.location.pathname.split("/").pop();
+
+if(onPage == "destination.html") {
   getData("destinations");
-} else if (window.location.pathname == "/crew.html") {
+} else if (onPage == "crew.html") {
   getData("crew");
-} else if (window.location.pathname == "/technology.html") {
+} else if (onPage == "technology.html") {
   getData("technology");
 }
 
