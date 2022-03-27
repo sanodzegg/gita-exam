@@ -24,6 +24,7 @@ const variables = {
   }
 }
 
+let tab = 0;
 const getData = (section) => {
   let req = new XMLHttpRequest();
   req.onreadystatechange = function() {
@@ -35,6 +36,9 @@ const getData = (section) => {
         scroller([...variables.crew.nav.children], "crew", variables.crew);
       } else {
         scroller([...variables.technology.nav.children], "technology", variables.technology);
+        if(window.innerWidth <= 880) {
+          variables.technology.img.setAttribute("src", `${data.technology[tab].images.portrait}`); 
+        }
       }
     }
   };
@@ -86,6 +90,7 @@ const scroller = (arr, type, el) => {
   el = Object.keys(el);
   navArr.forEach((e,indx) => {
     e.addEventListener("click", () => {
+      tab = indx;
       for(let j = 0; j < navArr.length; j++) {
         navArr[j].classList.remove("active");
       }
@@ -95,7 +100,7 @@ const scroller = (arr, type, el) => {
           if(typeof(i) != "object") {
             obj[e].innerText = i;
           } else {
-            variables.destination.img.setAttribute("src", `${data.destinations[indx].images.png}`);
+            variables.destination.img.setAttribute("src", `${data.destinations[indx].images.webp}`);
           }
         });
       } else if (type == "crew") {
@@ -103,7 +108,7 @@ const scroller = (arr, type, el) => {
           if(typeof(i) != "object") {
             obj[e].innerText = i;
           } else {
-            variables.crew.img.setAttribute("src", `${data.crew[indx].images.png}`);
+            variables.crew.img.setAttribute("src", `${data.crew[indx].images.webp}`);
           }
         });
       } else {
@@ -111,7 +116,7 @@ const scroller = (arr, type, el) => {
           if(typeof(i) != "object") {
             obj[e].innerText = i;
           } else {
-            variables.technology.img.setAttribute("src", `${data.technology[indx].images.landscape}`);
+              variables.technology.img.setAttribute("src", `${data.technology[indx].images.landscape}`);
           }
         });
       }
