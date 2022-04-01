@@ -8,6 +8,17 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+  background: #1C1E26;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8E9096;
+}
 
 .w-1 {
     background-image: url('../assets/jpg/web/background-home-desktop.jpg');

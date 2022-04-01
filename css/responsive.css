@@ -71,6 +71,7 @@
     }
     .display-wrapper {
         flex-direction: column;
+        min-height: 80vh;
     }
     .display-info {
         margin-top: 53px;
@@ -160,6 +161,7 @@
         overflow: hidden;
         overflow-y: scroll;
         height: 100%;
+        min-height: 100vh;
     }
     #burgerOpen {
         display: block;
@@ -203,6 +205,9 @@
     }
     .text-wrapper {
         padding: 0 6.400vw;
+    }
+    .text-wrapper h1 {
+        white-space: nowrap;
     }
     .display-info {
         padding: 0 6.400vw;
