@@ -287,3 +287,14 @@
         white-space: normal;
     }
 }
+
+@media screen and (orientation: landscape) {
+    body {
+        overflow: scroll;
+        height: 100%;
+    }
+
+    #explore {
+        margin-bottom: 50px;
+    }
+}
