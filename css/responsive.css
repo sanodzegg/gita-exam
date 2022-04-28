@@ -6,8 +6,11 @@
 
 @media screen and (max-width: 880px) {
     body {
-        height: 100vh;
-        overflow: hidden;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    #explore {
+        margin-bottom: 50px;
     }
     .w-1 {
         background-image: url('../assets/jpg/tablet/background-home-tablet.jpg');
@@ -156,6 +159,13 @@
     }
 }
 
+@media screen and (max-width: 690px) {
+    body {
+        height: 100%;
+        min-height: 100vh;
+    }
+}
+
 @media screen and (max-width: 580px) {
     body {
         overflow: hidden;
@@ -288,9 +298,13 @@
     }
 }
 
-@media screen and (orientation: landscape) {
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
     body {
-        overflow: scroll;
+        overflow-y: scroll;
         height: 100%;
     }
 
